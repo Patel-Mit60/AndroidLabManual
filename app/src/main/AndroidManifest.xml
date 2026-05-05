@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLabManual">
         <activity
+            android:name=".Shared_Preferences"
+            android:exported="false" />
+        <activity
             android:name=".Date_time_alert_progress"
             android:exported="false" />
         <activity

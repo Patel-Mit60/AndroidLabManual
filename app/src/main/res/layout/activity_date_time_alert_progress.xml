@@ -9,14 +9,29 @@
     tools:context=".Date_time_alert_progress">
 
     <EditText
+        android:layout_marginTop="40dp"
         android:id="@+id/timeselect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Select Time"
         />
+
     <EditText
         android:id="@+id/dateselect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Select Date"/>
+
+    <Button
+        android:id="@+id/alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" AlertDialog"
+        />
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress"/>
 </LinearLayout>
