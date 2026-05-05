@@ -20,7 +20,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date;
+    Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date,sharepref1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         implicit1=findViewById(R.id.implicit1);
         recy1=findViewById(R.id.recy1);
         date=findViewById(R.id.date);
+        sharepref1=findViewById(R.id.sharepref1);
 
         Loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,5 +96,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        sharepref1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent share=new Intent(MainActivity.this,Shared_Preferences.class);
+                startActivity(share);
+            }
+        });
     }
 }
