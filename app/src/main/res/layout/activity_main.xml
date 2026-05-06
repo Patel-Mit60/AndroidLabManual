@@ -99,4 +99,11 @@
         android:text="Alarm Manager"
         android:layout_marginTop="610dp"/>
 
+    <Button
+        android:id="@+id/mediaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media (Cam/Vid/Aud)"
+        android:layout_marginTop="660dp"/>
+
 </RelativeLayout>
