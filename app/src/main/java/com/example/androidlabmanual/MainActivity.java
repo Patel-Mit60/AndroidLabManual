@@ -22,6 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date,sharepref1,dbbtn,contentProviderBtn,serviceBtn,alarmBtn,mediaBtn;
     Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date,sharepref1,dbbtn,internalStorageBtn;
 
     @SuppressLint("MissingInflatedId")
@@ -40,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         date=findViewById(R.id.date);
         sharepref1=findViewById(R.id.sharepref1);
         dbbtn=findViewById(R.id.dbbtn);
+        contentProviderBtn=findViewById(R.id.contentProviderBtn);
+        serviceBtn=findViewById(R.id.serviceBtn);
+        alarmBtn=findViewById(R.id.alarmBtn);
+        mediaBtn=findViewById(R.id.mediaBtn);
         internalStorageBtn=findViewById(R.id.internalStorageBtn);
 
         Loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +120,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        contentProviderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cp = new Intent(MainActivity.this, ContentProviderActivity.class);
+                startActivity(cp);
+            }
+        });
+
+        serviceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent service = new Intent(MainActivity.this, ServiceActivity.class);
+                startActivity(service);
+            }
+        });
+
+        alarmBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent alarm = new Intent(MainActivity.this, AlarmActivity.class);
+                startActivity(alarm);
+            }
+        });
+
+        mediaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent media = new Intent(MainActivity.this, MediaActivity.class);
+                startActivity(media);
         internalStorageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

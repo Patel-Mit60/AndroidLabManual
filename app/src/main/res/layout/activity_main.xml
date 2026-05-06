@@ -79,6 +79,33 @@
         android:layout_marginTop="460dp"/>
 
     <Button
+        android:id="@+id/contentProviderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content Provider"
+        android:layout_marginTop="510dp"/>
+
+    <Button
+        android:id="@+id/serviceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Background Service"
+        android:layout_marginTop="560dp"/>
+
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm Manager"
+        android:layout_marginTop="610dp"/>
+
+    <Button
+        android:id="@+id/mediaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media (Cam/Vid/Aud)"
+        android:layout_marginTop="660dp"/>
+
         android:id="@+id/internalStorageBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
