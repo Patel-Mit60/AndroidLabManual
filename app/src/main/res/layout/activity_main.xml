@@ -85,4 +85,11 @@
         android:text="Content Provider"
         android:layout_marginTop="510dp"/>
 
+    <Button
+        android:id="@+id/serviceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Background Service"
+        android:layout_marginTop="560dp"/>
+
 </RelativeLayout>
