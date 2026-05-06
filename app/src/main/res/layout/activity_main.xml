@@ -78,4 +78,11 @@
         android:text="SQLite Database"
         android:layout_marginTop="460dp"/>
 
+    <Button
+        android:id="@+id/internalStorageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_marginTop="510dp"/>
+
 </RelativeLayout>
