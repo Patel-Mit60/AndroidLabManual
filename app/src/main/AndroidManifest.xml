@@ -33,6 +33,9 @@
             android:name=".ContentProviderActivity"
             android:exported="false" />
         <activity
+            android:name=".InternalStorageActivity"
+            android:exported="false" />
+        <activity
             android:name=".Db"
             android:exported="false" />
         <activity

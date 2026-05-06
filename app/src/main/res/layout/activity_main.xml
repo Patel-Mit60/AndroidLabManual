@@ -106,4 +106,10 @@
         android:text="Media (Cam/Vid/Aud)"
         android:layout_marginTop="660dp"/>
 
+        android:id="@+id/internalStorageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_marginTop="510dp"/>
+
 </RelativeLayout>
