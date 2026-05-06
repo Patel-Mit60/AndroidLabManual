@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLabManual">
         <activity
+            android:name=".InternalStorageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Db"
+            android:exported="false" />
+        <activity
             android:name=".Shared_Preferences"
             android:exported="false" />
         <activity
