@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         recy1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent recy1=new Intent(MainActivity.this, item.class);
+                Intent recy1=new Intent(MainActivity.this, recyclerview.class);
                 startActivity(recy1);
             }
         });
