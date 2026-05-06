@@ -92,4 +92,11 @@
         android:text="Background Service"
         android:layout_marginTop="560dp"/>
 
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm Manager"
+        android:layout_marginTop="610dp"/>
+
 </RelativeLayout>
