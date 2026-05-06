@@ -71,5 +71,11 @@
         android:text="Shared Preferences"
         android:layout_marginTop="410dp"/>
 
+    <Button
+        android:id="@+id/dbbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite Database"
+        android:layout_marginTop="460dp"/>
 
 </RelativeLayout>

@@ -15,12 +15,14 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.androidlabmanual.Data.MyDbHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date,sharepref1;
+    Button Loginbtn,expint,implicit1,fragment,UIElement1,recy1,date,sharepref1,dbbtn;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -28,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
 
         Loginbtn=findViewById(R.id.Loginbtn);
         expint=findViewById(R.id.expint);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         recy1=findViewById(R.id.recy1);
         date=findViewById(R.id.date);
         sharepref1=findViewById(R.id.sharepref1);
+        dbbtn=findViewById(R.id.dbbtn);
 
         Loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +103,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent share=new Intent(MainActivity.this,Shared_Preferences.class);
                 startActivity(share);
+            }
+        });
+
+        dbbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent db= new Intent(MainActivity.this,Db.class);
+                startActivity(db);
             }
         });
     }
